@@ -438,12 +438,13 @@
   }
 }
 
-.header .intro {
+.intro {
   padding: 0 20px;
   max-width: 1240px;
+  margin: 0 auto;
 }
 
-.header .intro__block {
+.intro__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,7 +457,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header .intro__block {
+  .intro__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -465,23 +466,23 @@
   }
 }
 
-.header .intro__block-picture {
+.intro__block-picture {
   max-width: 600px;
   width: 100%;
 }
 
-.header .intro__block-img {
+.intro__block-img {
   border-radius: 6px 0 0 6px;
 }
 
 @media (max-width: 1024px) {
-  .header .intro__block-img {
+  .intro__block-img {
     width: 100%;
     border-radius: 6px 6px 0 0;
   }
 }
 
-.header .intro__block-info {
+.intro__block-info {
   max-width: 600px;
   width: 100%;
   padding: 57px 60px 39px 60px;
@@ -501,18 +502,18 @@
 }
 
 @media (max-width: 1220px) {
-  .header .intro__block-info {
+  .intro__block-info {
     padding: 30px 30px 14px 29px;
   }
 }
 
 @media (max-width: 1024px) {
-  .header .intro__block-info {
+  .intro__block-info {
     border-radius: 0 0 6px 6px;
   }
 }
 
-.header .intro__block-title {
+.intro__block-title {
   font-family: "Roboto", normal;
   font-weight: 300;
   font-size: 24px;
@@ -522,12 +523,12 @@
 }
 
 @media (max-width: 1220px) {
-  .header .intro__block-title {
+  .intro__block-title {
     padding-bottom: 15px;
   }
 }
 
-.header .intro__block-autor {
+.intro__block-autor {
   font-family: "Roboto", normal;
   font-weight: 400;
   font-size: 14px;
@@ -535,16 +536,16 @@
   color: #323642;
 }
 
-.header .intro__block-autor span {
+.intro__block-autor span {
   padding-left: 8px;
   color: #889099;
 }
 
-.header .intro__block-autor span.date {
+.intro__block-autor span.date {
   padding-left: 7px;
 }
 
-.header .intro__block-copyright {
+.intro__block-copyright {
   font-family: "Roboto", normal;
   font-weight: 400;
   font-size: 12px;
@@ -556,12 +557,12 @@
 }
 
 @media (max-width: 1220px) {
-  .header .intro__block-copyright {
+  .intro__block-copyright {
     margin: 11px 0 9px;
   }
 }
 
-.header .intro__block-comments {
+.intro__block-comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,7 +571,7 @@
           align-items: center;
 }
 
-.header .intro__block-comments .comments-block__icon {
+.intro__block-comments .comments-block__icon {
   background: url("../img/comment.svg");
   width: 16px;
   height: 16px;
@@ -578,12 +579,12 @@
 }
 
 @media (max-width: 1025px) {
-  .header .intro__block-comments .comments-block__icon {
+  .intro__block-comments .comments-block__icon {
     background: url("../img/comment_mobile.svg");
   }
 }
 
-.header .intro__block-comments .comments-block__num {
+.intro__block-comments .comments-block__num {
   font-family: "Roboto", normal;
   font-weight: 400;
   font-size: 14px;
@@ -591,26 +592,26 @@
   color: #889099;
 }
 
-.header .tags {
-  margin-top: 30px;
+.tag {
+  margin: 30px auto 0;
   max-width: 1240px;
   width: 100%;
 }
 
 @media (min-width: 1121px) {
-  .header .tags {
+  .tag {
     padding: 0 20px;
     border-radius: 4px;
   }
 }
 
 @media (max-width: 768px) {
-  .header .tags {
+  .tag {
     display: none;
   }
 }
 
-.header .tags__content {
+.tag__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,18 +626,18 @@
 }
 
 @media (max-width: 1120px) {
-  .header .tags__content {
+  .tag__content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.header .tags__list {
+.tag__list {
   display: inline-block;
 }
 
-.header .tags__list-item {
+.tag__list-item {
   margin-right: 30px;
   display: inline;
   font-family: "Roboto", normal;
@@ -648,25 +649,25 @@
   color: #323642;
 }
 
-.header .tags__list-item:first-child {
+.tag__list-item:first-child {
   margin-right: 40px;
 }
 
-.header .tags__list-link {
+.tag__list-link {
   color: #4cb649;
   letter-spacing: 0.8px;
 }
 
 @media (max-width: 1120px) {
-  .header .tags__block {
+  .tag__block {
     width: 100%;
   }
-  .header .tags__block:last-child {
+  .tag__block:last-child {
     margin-top: 20px;
   }
 }
 
-.header .tags__block-btn {
+.tag__block-btn {
   font-family: "Roboto", normal;
   font-weight: 500;
   font-size: 14px;
@@ -676,7 +677,7 @@
   color: #323642;
 }
 
-.header .tags__block-btn:first-child {
+.tag__block-btn:first-child {
   margin-right: 34px;
 }
 
